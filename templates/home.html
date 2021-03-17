@@ -4,15 +4,17 @@
 
 
 {% block content %}
-{% if user.is_authenticated %}
-    Hi {{ user.username }}!
-    <p> <a href="{% url 'logout' %}">Log Out</a> </p>
-    {% else %}
-    <p>You are not logged in</p>
-    <button type="button" class="btn btn-outline-secondary"><a href="{% url 'login' %}">Log In</a></button>
-    <button type="button" class="btn btn-outline-secondary"><a href="{% url 'signup' %}">Sign up</a></button>
-    
-    {% endif %}
+
+<div class='jumbotron'>
+    <h1 class='display-4'>Technologies Gallary</h1>
+    <p class='lead'>A Article website built with Django. </p>
+    <p class='lead'>
+        <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">View All Articles</a>
+    </p>
+
+</div>
+
     
 
 {% endblock content %}
+

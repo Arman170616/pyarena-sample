@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
+    'articles.apps.ArticlesConfig',
 
     # 3rd Party
     'crispy_forms',
@@ -48,6 +49,8 @@ INSTALLED_APPS = [
 CRISPY_TEMPLATE_PACK ='bootstrap4'
 
 AUTH_USER_MODEL = 'users.CustomUser'
+
+TIME_ZONE = 'Asia/Dhaka'
 
 
 MIDDLEWARE = [
